@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\BrandController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Customer\AuthController;
 use App\Http\Controllers\Customer\CustomerController;
@@ -17,7 +18,9 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+Route::get('/', function () {
+    return redirect()->route('admin.product');
+});
 Route::group([
     'prefix' => 'customer'
 ], function () {
@@ -37,9 +40,12 @@ Route::group([
     Route::get('/product', [\App\Http\Controllers\Admin\ProductController::class, 'indexList'])->name('admin.product');
     Route::get('/product/detail', [\App\Http\Controllers\Admin\ProductController::class, 'indexDetail'])->name('admin.product.detail');
     Route::get('/product/create', [\App\Http\Controllers\Admin\ProductController::class, 'indexCreate'])->name('admin.product.create');
-    Route::get('/category', [CategoryController::class, 'indexList'])->name('admin.category')
-;    Route::get('/category/detail', [CategoryController::class, 'indexDetail'])->name('admin.category.detail');
+    Route::get('/category', [CategoryController::class, 'indexList'])->name('admin.category');
+    Route::get('/category/detail', [CategoryController::class, 'indexDetail'])->name('admin.category.detail');
     Route::get('/category/create', [CategoryController::class, 'indexCreate'])->name('admin.category.create');
+    Route::get('/brand', [BrandController::class, 'indexList'])->name('admin.brand');
+    Route::get('/brand/detail', [BrandController::class, 'indexDetail'])->name('admin.brand.detail');
+    Route::get('/brand/create', [BrandController::class, 'indexCreate'])->name('admin.brand.create');
 
 
 });

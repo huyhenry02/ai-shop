@@ -11,6 +11,7 @@ use Illuminate\Routing\Controller as BaseController;
 
 class CustomerController extends BaseController
 {
+    use AuthorizesRequests, ValidatesRequests;
    public function index(): View|Application|Factory|\Illuminate\Contracts\Foundation\Application
    {
        return view('customer.index');
