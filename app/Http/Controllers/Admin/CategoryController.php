@@ -9,19 +9,19 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 
-class ProductController extends BaseController
+class CategoryController extends BaseController
 {
    public function indexList(): View|Application|Factory|\Illuminate\Contracts\Foundation\Application
    {
-       return view('admin.product.list');
+       return view('admin.category.list');
    }
    public function indexDetail(): View|Application|Factory|\Illuminate\Contracts\Foundation\Application
    {
-       return view('admin.product.detail');
+       return view('admin.category.detail');
    }
    public function indexCreate()
    {
-       return view('admin.product.create');
+       return view('admin.category.create');
    }
 
 }

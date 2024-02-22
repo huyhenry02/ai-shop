@@ -7,7 +7,7 @@
                     <div class="page-header float-left">
                         <div class="page-title">
                             <div class="card-body">
-                                <a href="{{route('admin.product.create')}}" type="button" class="btn btn-primary">Create Product</a>
+                                <button type="button" class="btn btn-primary">Create Category</button>
                             </div>
                         </div>
                     </div>
@@ -41,26 +41,16 @@
                                 <thead>
                                 <tr>
                                     <th>Name</th>
-                                    <th>Category</th>
-                                    <th>Price</th>
-                                    <th>Sale</th>
-                                    <th>Size</th>
-                                    <th>Color</th>
                                     <th>Description</th>
 
                                 </tr>
                                 </thead>
-                               <tbody>
-                               <tr>
-                                   <td></td>
-                                   <td></td>
-                                   <td></td>
-                                   <td></td>
-                                   <td></td>
-                                   <td></td>
-                                   <td></td>
-                               </tr>
-                               </tbody>
+                                <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
                             </table>
                         </div>
                     </div>
