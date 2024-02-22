@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Running Shoes",
+        "description": "Designed for running and athletic activities"
+    },
+    {
+        "name": "Sneakers",
+        "description": "Casual and comfortable shoes"
+    },
+    {
+        "name": "Boots",
+        "description": "Sturdy and protective shoes for outdoor activities"
+    },
+    {
+        "name": "Sandals",
+        "description": "Open-toed and breathable shoes for warm weather"
+    },
+    {
+        "name": "Heels",
+        "description": "Elevated and stylish shoes for formal occasions"
+    },
+    {
+        "name": "Flats",
+        "description": "Comfortable and versatile shoes for everyday wear"
+    },
+    {
+        "name": "Oxfords",
+        "description": "Classic and formal shoes with laces"
+    },
+    {
+        "name": "Loafers",
+        "description": "Slip-on and comfortable shoes"
+    },
+    {
+        "name": "Espadrilles",
+        "description": "Casual and lightweight shoes with rope soles"
+    },
+    {
+        "name": "Mules",
+        "description": "Backless and easy to wear shoes"
+    }
+]

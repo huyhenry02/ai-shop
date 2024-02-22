@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Nike",
+        "description": "A multinational corporation that is engaged in the design, development, manufacturing, and worldwide marketing and sales of footwear, apparel, equipment, accessories, and services."
+    },
+    {
+        "name": "Adidas",
+        "description": "A multinational corporation, founded and headquartered in Herzogenaurach, Germany, that designs and manufactures shoes, clothing, and accessories."
+    },
+    {
+        "name": "Puma",
+        "description": "A German multinational corporation that designs and manufactures athletic and casual footwear, apparel, and accessories."
+    },
+    {
+        "name": "Reebok",
+        "description": "An American-inspired global brand with a deep fitness heritage and a clear mission: To be the best fitness brand in the world."
+    }
+]
