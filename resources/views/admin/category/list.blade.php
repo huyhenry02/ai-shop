@@ -17,8 +17,8 @@
                         <div class="page-title">
                             <ol class="breadcrumb text-right">
                                 <li><a href="#">Dashboard</a></li>
-                                <li><a href="#">Table</a></li>
-                                <li class="active">Data table</li>
+                                <li><a href="#">Category</a></li>
+                                <li class="active">List Category</li>
                             </ol>
                         </div>
                     </div>
@@ -40,16 +40,20 @@
                             <table id="bootstrap-data-table" class="table table-striped table-bordered">
                                 <thead>
                                 <tr>
+                                    <th>Id</th>
                                     <th>Name</th>
                                     <th>Description</th>
 
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
+                                @foreach($categories as $category)
+                                    <tr>
+                                        <td>{{$category->id ?? ''}}</td>
+                                        <td>{{$category->name ?? ''}}</td>
+                                        <td>{{$category->description ?? ''}}</td>
+                                    </tr>
+                                @endforeach
                                 </tbody>
                             </table>
                         </div>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Models\Category;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Foundation\Application;
@@ -13,7 +14,8 @@ class CategoryController extends BaseController
 {
    public function indexList(): View|Application|Factory|\Illuminate\Contracts\Foundation\Application
    {
-       return view('admin.category.list');
+       $categories = Category::all();
+       return view('admin.category.list',['categories'=>$categories]);
    }
    public function indexDetail(): View|Application|Factory|\Illuminate\Contracts\Foundation\Application
    {
