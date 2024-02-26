@@ -19,6 +19,7 @@ return new class extends Migration
             $table->decimal('sale', 8, 2);
             $table->string('color');
             $table->string('size');
+            $table->string('image')->nullable();
             $table->integer('quantity');
             $table->unsignedBigInteger('category_id');
             $table->unsignedBigInteger('brand_id');

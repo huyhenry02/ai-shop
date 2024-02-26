@@ -17,8 +17,8 @@
                         <div class="page-title">
                             <ol class="breadcrumb text-right">
                                 <li><a href="#">Dashboard</a></li>
-                                <li><a href="#">Table</a></li>
-                                <li class="active">Data table</li>
+                                <li><a href="#">Product</a></li>
+                                <li class="active">Data Product</li>
                             </ol>
                         </div>
                     </div>
@@ -34,7 +34,7 @@
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header">
-                            <strong class="card-title">Data Table</strong>
+                            <strong class="card-title">Data Product</strong>
                         </div>
                         <div class="card-body">
                             <table id="bootstrap-data-table" class="table table-striped table-bordered">
@@ -49,6 +49,7 @@
                                     <th>Size</th>
                                     <th>Color</th>
                                     <th>Description</th>
+                                    <th>Action</th>
                                 </tr>
                                 </thead>
                                <tbody>
@@ -64,8 +65,9 @@
                                         <td>{{$product->color ?? ''}}</td>
                                         <td>{{$product->description ?? ''}}</td>
                                         <td>
-                                             <a href="" type="button" class="btn btn-primary">Edit</a>
-                                             <a href="" type="button" class="btn btn-danger">Delete</a>
+                                             <a href="{{route('admin.product.edit.show',[$product->id])}}" type="button" class="btn btn-primary">Edit</a>
+                                             <a href="{{route('admin.product.delete',[$product->id])}}" type="button" class="btn btn-danger">Delete</a>
+                                             <a href="" type="button" class="btn btn-success">More</a>
                                         </td>
                                       </tr>
                                     @endforeach

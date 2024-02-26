@@ -38,10 +38,6 @@
 @include('customer.layouts.header')
 <!-- End Header Area -->
 
-<!-- start banner Area -->
-@include('customer.layouts.banner')
-<!-- End banner Area -->
-
 @yield('content')
 <!-- start footer Area -->
 @include('customer.layouts.footer')

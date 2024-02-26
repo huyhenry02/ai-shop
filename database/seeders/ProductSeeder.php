@@ -28,6 +28,7 @@ class ProductSeeder extends Seeder
                 'size' => $item->size,
                 'category_id' => $item->category_id,
                 'brand_id' => $item->brand_id,
+                'image' => $item->image
             ]);
         }
     }

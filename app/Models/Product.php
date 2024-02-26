@@ -25,6 +25,7 @@ class Product extends Model
         'size',
         'category_id',
         'brand_id',
+        'image'
     ];
     /**
      * The attributes that should be hidden for serialization.

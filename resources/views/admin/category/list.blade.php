@@ -7,7 +7,8 @@
                     <div class="page-header float-left">
                         <div class="page-title">
                             <div class="card-body">
-                                <button type="button" class="btn btn-primary">Create Category</button>
+                                <a type="button" href="{{route('admin.category.create')}}" class="btn btn-primary">Create
+                                    Category</a>
                             </div>
                         </div>
                     </div>
@@ -43,15 +44,23 @@
                                     <th>Id</th>
                                     <th>Name</th>
                                     <th>Description</th>
+                                    <th>Action</th>
 
                                 </tr>
                                 </thead>
                                 <tbody>
                                 @foreach($categories as $category)
                                     <tr>
-                                        <td>{{$category->id ?? ''}}</td>
-                                        <td>{{$category->name ?? ''}}</td>
-                                        <td>{{$category->description ?? ''}}</td>
+                                        <td width="10%">{{$category->id ?? ''}}</td>
+                                        <td width="20%">{{$category->name ?? ''}}</td>
+                                        <td width="58%">{{$category->description ?? ''}}</td>
+                                        <td width="12%">
+                                            <a href="{{route('admin.category.edit.show',[$category->id])}}"
+                                               class="btn btn-primary">Edit</a>
+                                            <a href="{{route('admin.category.delete',[$category->id])}}"
+                                               class="btn btn-danger">Delete</a>
+
+                                        </td>
                                     </tr>
                                 @endforeach
                                 </tbody>

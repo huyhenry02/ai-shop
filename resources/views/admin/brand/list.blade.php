@@ -7,7 +7,7 @@
                     <div class="page-header float-left">
                         <div class="page-title">
                             <div class="card-body">
-                                <button type="button" class="btn btn-primary">Create Brand</button>
+                                <a type="button" href="{{route('admin.brand.create')}}" class="btn btn-primary">Create Brand</a>
                             </div>
                         </div>
                     </div>
@@ -17,8 +17,8 @@
                         <div class="page-title">
                             <ol class="breadcrumb text-right">
                                 <li><a href="#">Dashboard</a></li>
-                                <li><a href="#">Table</a></li>
-                                <li class="active">Data table</li>
+                                <li><a href="#">Brand</a></li>
+                                <li class="active">Data Brand</li>
                             </ol>
                         </div>
                     </div>
@@ -34,22 +34,32 @@
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header">
-                            <strong class="card-title">Data Table</strong>
+                            <strong class="card-title">Data Brand</strong>
                         </div>
                         <div class="card-body">
                             <table id="bootstrap-data-table" class="table table-striped table-bordered">
                                 <thead>
                                 <tr>
+                                    <th>ID</th>
                                     <th>Name</th>
                                     <th>Description</th>
-
+                                    <th>Action</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
+                                @foreach($brands as $brand)
+                                    <tr>
+                                        <td width="10%">{{$brand->id}}</td>
+                                        <td width="20%">{{$brand->name}}</td>
+                                        <td width="58%">{{$brand->description}}</td>
+                                        <td width="12%">
+                                            <a href="{{route('admin.brand.edit.show',[$brand->id])}}"
+                                               class="btn btn-primary">Edit</a>
+                                            <a href="{{route('admin.brand.delete',[$brand->id])}}"
+                                               class="btn btn-danger">Delete</a>
+                                        </td>
+                                    </tr>
+                                @endforeach
                                 </tbody>
                             </table>
                         </div>

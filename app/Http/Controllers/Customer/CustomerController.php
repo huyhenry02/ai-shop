@@ -16,4 +16,9 @@ class CustomerController extends BaseController
    {
        return view('customer.index');
    }
+
+    public function indexContact(): View|Application|Factory|\Illuminate\Contracts\Foundation\Application
+    {
+        return view('customer.contact');
+    }
 }

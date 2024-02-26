@@ -8,7 +8,8 @@
         "color": "Blue",
         "size": "8",
         "category_id": 1,
-        "brand_id": 1
+        "brand_id": 1,
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
     },
     {
         "name": "Basketball Sneakers 1",
@@ -19,7 +20,8 @@
         "color": "Red",
         "size": "10",
         "category_id": 2,
-        "brand_id": 2
+        "brand_id": 2,
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
     },
     {
         "name": "Casual Sneakers 1",
@@ -30,7 +32,8 @@
         "color": "Black",
         "size": "9",
         "category_id": 3,
-        "brand_id": 3
+        "brand_id": 3,
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
     },
     {
         "name": "CrossFit Training Shoes 1",
@@ -41,7 +44,8 @@
         "color": "Green",
         "size": "7",
         "category_id": 4,
-        "brand_id": 4
+        "brand_id": 4,
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
     },
     {
         "name": "Trail Running Shoes 1",
@@ -52,7 +56,8 @@
         "color": "Gray",
         "size": "8",
         "category_id": 5,
-        "brand_id": 1
+        "brand_id": 1,
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
     },
     {
         "name": "Soccer Cleats 1",
@@ -63,7 +68,8 @@
         "color": "Yellow",
         "size": "9",
         "category_id": 6,
-        "brand_id": 2
+        "brand_id": 2,
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
     },
     {
         "name": "Slip-On Sneakers 1",
@@ -74,7 +80,8 @@
         "color": "White",
         "size": "7",
         "category_id": 7,
-        "brand_id": 3
+        "brand_id": 3,
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
     },
     {
         "name": "Weightlifting Shoes 1",
@@ -85,7 +92,8 @@
         "color": "Black",
         "size": "10",
         "category_id": 8,
-        "brand_id": 4
+        "brand_id": 4,
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
     },
     {
         "name": "Running Sandals 1",
@@ -96,7 +104,8 @@
         "color": "Brown",
         "size": "9",
         "category_id": 9,
-        "brand_id": 1
+        "brand_id": 1,
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
     },
     {
         "name": "Skate Shoes 1",
@@ -107,7 +116,8 @@
         "color": "Blue",
         "size": "8",
         "category_id": 10,
-        "brand_id": 2
+        "brand_id": 2,
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
     },
     {
         "name": "Running Shoes 2",
@@ -118,7 +128,8 @@
         "color": "Blue",
         "size": "8",
         "category_id": 1,
-        "brand_id": 1
+        "brand_id": 1,
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
     },
     {
         "name": "Basketball Sneakers 2",
@@ -129,7 +140,8 @@
         "color": "Red",
         "size": "10",
         "category_id": 2,
-        "brand_id": 2
+        "brand_id": 2,
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
     },
     {
         "name": "Casual Sneakers 2",
@@ -140,7 +152,8 @@
         "color": "Black",
         "size": "9",
         "category_id": 3,
-        "brand_id": 3
+        "brand_id": 3,
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
     },
     {
         "name": "CrossFit Training Shoes 2",
@@ -151,7 +164,8 @@
         "color": "Green",
         "size": "7",
         "category_id": 4,
-        "brand_id": 4
+        "brand_id": 4,
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
     },
     {
         "name": "Trail Running Shoes 2",
@@ -162,7 +176,8 @@
         "color": "Gray",
         "size": "8",
         "category_id": 5,
-        "brand_id": 1
+        "brand_id": 1,
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
     },
     {
         "name": "Soccer Cleats 2",
@@ -173,7 +188,8 @@
         "color": "Yellow",
         "size": "9",
         "category_id": 6,
-        "brand_id": 2
+        "brand_id": 2,
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
     },
     {
         "name": "Slip-On Sneakers 2",
@@ -184,7 +200,8 @@
         "color": "White",
         "size": "7",
         "category_id": 7,
-        "brand_id": 3
+        "brand_id": 3,
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
     },
     {
         "name": "Weightlifting Shoes 2",
@@ -195,7 +212,8 @@
         "color": "Black",
         "size": "10",
         "category_id": 8,
-        "brand_id": 4
+        "brand_id": 4,
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
     },
     {
         "name": "Running Sandals 2",
@@ -206,7 +224,8 @@
         "color": "Brown",
         "size": "9",
         "category_id": 9,
-        "brand_id": 1
+        "brand_id": 1,
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
     },
     {
         "name": "Skate Shoes 2",
@@ -217,7 +236,8 @@
         "color": "Blue",
         "size": "8",
         "category_id": 10,
-        "brand_id": 2
+        "brand_id": 2,
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
     },
     {
         "name": "Running Shoes 3",
@@ -228,7 +248,8 @@
         "color": "Blue",
         "size": "8",
         "category_id": 1,
-        "brand_id": 1
+        "brand_id": 1,
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
     },
     {
         "name": "Basketball Sneakers 3",
@@ -239,7 +260,8 @@
         "color": "Red",
         "size": "10",
         "category_id": 2,
-        "brand_id": 2
+        "brand_id": 2,
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
     },
     {
         "name": "Casual Sneakers 3",
@@ -250,7 +272,8 @@
         "color": "Black",
         "size": "9",
         "category_id": 3,
-        "brand_id": 3
+        "brand_id": 3,
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
     },
     {
         "name": "CrossFit Training Shoes 3",
@@ -261,7 +284,8 @@
         "color": "Green",
         "size": "7",
         "category_id": 4,
-        "brand_id": 4
+        "brand_id": 4,
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
     },
     {
         "name": "Trail Running Shoes 3",
@@ -272,7 +296,8 @@
         "color": "Gray",
         "size": "8",
         "category_id": 5,
-        "brand_id": 1
+        "brand_id": 1,
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
     },
     {
         "name": "Soccer Cleats 3",
@@ -283,7 +308,8 @@
         "color": "Yellow",
         "size": "9",
         "category_id": 6,
-        "brand_id": 2
+        "brand_id": 2,
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
     },
     {
         "name": "Slip-On Sneakers 3",
@@ -294,7 +320,8 @@
         "color": "White",
         "size": "7",
         "category_id": 7,
-        "brand_id": 3
+        "brand_id": 3,
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
     },
     {
         "name": "Weightlifting Shoes 3",
@@ -305,7 +332,8 @@
         "color": "Black",
         "size": "10",
         "category_id": 8,
-        "brand_id": 4
+        "brand_id": 4,
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
     },
     {
         "name": "Running Sandals 3",
@@ -316,7 +344,8 @@
         "color": "Brown",
         "size": "9",
         "category_id": 9,
-        "brand_id": 1
+        "brand_id": 1,
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
     },
     {
         "name": "Skate Shoes 3",
@@ -327,6 +356,7 @@
         "color": "Blue",
         "size": "8",
         "category_id": 10,
-        "brand_id": 2
+        "brand_id": 2,
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
     }
 ]

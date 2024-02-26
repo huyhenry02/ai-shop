@@ -6,52 +6,69 @@
                 <strong>Create Product</strong>
             </div>
             <div class="card-body card-block">
-                <form action="#" method="post" enctype="multipart/form-data" class="form-horizontal">
+                <form action="{{route('admin.product.post')}}" method="post" enctype="multipart/form-data" class="form-horizontal">
+                    @csrf
                     <div class="row form-group">
                         <div class="col col-md-3"><label for="text-input" class=" form-control-label">Name</label></div>
-                        <div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" placeholder="Name" class="form-control"></div>
+                        <div class="col-12 col-md-9"><input type="text" id="text-input" name="name" placeholder="Name" class="form-control"></div>
                     </div>
                     <div class="row form-group">
                         <div class="col col-md-3"><label for="text-input" class=" form-control-label">Color</label></div>
-                        <div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" placeholder="Color" class="form-control"></div>
+                        <div class="col-12 col-md-9"><input type="text" id="text-input" name="color" placeholder="Color" class="form-control"></div>
                     </div>
                     <div class="row form-group">
                         <div class="col col-md-3"><label for="text-input" class=" form-control-label">Size</label></div>
-                        <div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" placeholder="Size" class="form-control"></div>
+                        <div class="col-12 col-md-9"><input type="text" id="text-input" name="size" placeholder="Size" class="form-control"></div>
                     </div>
                     <div class="row form-group">
                         <div class="col col-md-3"><label for="text-input" class=" form-control-label">Price</label></div>
-                        <div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" placeholder="Price" class="form-control"></div>
+                        <div class="col-12 col-md-9"><input type="number" id="text-input" name="price" placeholder="Price" class="form-control"></div>
                     </div>
                     <div class="row form-group">
                         <div class="col col-md-3"><label for="text-input" class=" form-control-label">Sale</label></div>
-                        <div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" placeholder="Sale" class="form-control"></div>
+                        <div class="col-12 col-md-9"><input type="number" id="text-input" name="sale" placeholder="Sale" class="form-control"></div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">Quantity</label></div>
+                        <div class="col-12 col-md-9"><input type="number" id="text-input" name="quantity" placeholder="Quantity" class="form-control"></div>
                     </div>
                     <div class="row form-group">
                         <div class="col col-md-3"><label for="textarea-input" class=" form-control-label">Description</label></div>
-                        <div class="col-12 col-md-9"><textarea name="textarea-input" id="textarea-input" rows="9" placeholder="Description..." class="form-control"></textarea></div>
+                        <div class="col-12 col-md-9"><textarea name="description" id="textarea-input" rows="9" placeholder="Description..." class="form-control"></textarea></div>
                     </div>
                     <div class="row form-group">
                         <div class="col col-md-3"><label for="select" class=" form-control-label">Category</label></div>
                         <div class="col-12 col-md-9">
-                            <select name="select" id="select" class="form-control">
+                            <select name="category_id" id="select" class="form-control">
                                 <option value="0">Please select category</option>
-                                <option value="1">Option #1</option>
-                                <option value="2">Option #2</option>
-                                <option value="3">Option #3</option>
+                                @foreach($categories as $category)
+                                    <option value="{{$category->id}}">{{$category->name}}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col col-md-3"><label for="select" class=" form-control-label">Brand</label></div>
+                        <div class="col-12 col-md-9">
+                            <select name="brand_id" id="select" class="form-control">
+                                <option value="0">Please select Brand</option>
+                                @foreach($brands as $brand)
+                                    <option value="{{$brand->id}}">{{$brand->name}}</option>
+                                @endforeach
                             </select>
                         </div>
                     </div>
                     <div class="row form-group">
                         <div class="col col-md-3"><label for="file-input" class=" form-control-label">File Product</label></div>
-                        <div class="col-12 col-md-9"><input type="file" id="file-input" name="file-input" class="form-control-file"></div>
+                        <div class="col-12 col-md-9"><input type="file" id="file-input" name="image " class="form-control-file"></div>
+                    </div>
+                    <div class="card-body" style="text-align: right">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="button" class="btn btn-primary">Exit</button>
                     </div>
                 </form>
             </div>
-            <div class="card-body">
-                <button type="button" class="btn btn-primary">Submit</button>
-                <button type="button" class="btn btn-primary">Exit</button>
-            </div>
+
         </div>
     </div>
 @endsection()
