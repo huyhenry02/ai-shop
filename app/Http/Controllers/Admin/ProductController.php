@@ -46,12 +46,14 @@ class ProductController extends BaseController
             DB::beginTransaction();
             $product = new Product();
             $product->fill($request->all());
+            $product->save();
             if ($request->hasFile('image')) {
-                $product->image = $request->file('image')->store('storage/public/product');
+                $imageName = $product->id . '.' . $request->file('image')->getClientOriginalExtension();
+                $request->file('image')->storeAs('public/product', $imageName);
+                $imageUrl = asset('storage/product/' . $imageName);
+                $product->image = $imageUrl;
                 $product->save();
             }
-            $product->save();
-
             DB::commit();
             return redirect()->route('admin.product');
         } catch (\Exception $e) {
