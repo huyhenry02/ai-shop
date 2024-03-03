@@ -19,18 +19,26 @@
                             <a href="{{route('customer.product')}}" class="nav-link dropdown-toggle"
                             >Shop</a>
                         </li>
+                        <li class="nav-item"><a class="nav-link" href="{{route('customer.contact')}}">Contact</a></li>
                         <li class="nav-item submenu dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                               aria-expanded="false">Blog</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                                <li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
-                            </ul>
+                               aria-expanded="false">My Account</a>
+                            @if(isset(auth()->user()->name))
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="{{route('customer.order.confirmation')}}">Your Order</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="">Your Information</a></li>
+                                    <li class="nav-item"><a class="nav-link" href={{route('customer.logout.post')}}>Sign Out</a></li>
+                                </ul>
+                            @else
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="{{route('customer.login')}}">Login</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="{{route('customer.register')}}">Register</a></li>
+                                </ul>
+                            @endif
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="{{route('customer.contact')}}">Contact</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="nav-item"><a href="{{route('customer.order.cart')}}" class="cart"><span class="ti-bag"></span></a></li>
+                        <li class="nav-item"><a href="{{route('customer.cart.index')}}" class="cart"><span class="ti-bag"></span></a></li>
                         <li class="nav-item">
                             <button class="search"><span class="lnr lnr-magnifier" id="search"></span></button>
                         </li>

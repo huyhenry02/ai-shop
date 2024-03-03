@@ -80,10 +80,17 @@
                         </div>
                     </div>
                     <div class="row form-group">
+                        <div class="col col-md-3"><label for="file-input" class=" form-control-label">Current Product
+                                Image</label></div>
+                        <div class="col-12 col-md-9">
+                            <img src="{{ $product->image ?? '' }}" alt="Product Image" style="width: 100px; height: 100px;">
+                        </div>
+                    </div>
+                    <div class="row form-group">
                         <div class="col col-md-3"><label for="file-input" class=" form-control-label">File
                                 Product</label></div>
                         <div class="col-12 col-md-9"><input type="file" id="file-input" name="file-input"
-                                                            class="form-control-file"></div>
+                                                            class="form-control-file" value="{{$product->imgae ?? ''}}"></div>
                     </div>
                     <div class="card-body" style="text-align: right">
                         <button type="submit" class="btn btn-primary">Submit</button>
@@ -94,4 +101,5 @@
 
         </div>
     </div>
+
 @endsection()

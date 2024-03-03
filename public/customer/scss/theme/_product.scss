@@ -15,7 +15,7 @@
 	}
 }
 .hot_product_inner{
-	
+
 }
 .hot_p_item{
 	position: relative;
@@ -133,7 +133,7 @@
 		padding-bottom: 100px;
 	}
 	.feature_product_inner{
-		
+
 	}
 }
 .latest_product_inner{
@@ -471,10 +471,10 @@
 ============================================================================================ */
 .product_image_area{
 	padding-top: 120px;
-	
+
 }
 .s_product_inner{
-	
+
 }
 .s_Product_carousel{
 	.owl-dots{
@@ -631,7 +631,7 @@
 	.reduced{
 		bottom: -8px;
 	}
-	
+
 }
 
 
@@ -765,7 +765,7 @@
 	}
 }
 .review_list{
-	
+
 }
 .review_item{
 	margin-bottom: 15px;
@@ -863,7 +863,7 @@
 
 .comment_list{
 	.review_item{
-		
+
 	}
 }
 
@@ -887,7 +887,7 @@
 					font-weight: 500;
 					font-family: $primary-font;
 					color: $text-color;
-					border-bottom: 0px !important; 
+					border-bottom: 0px !important;
 				}
 			}
 		}
@@ -972,7 +972,7 @@
 							width: 60px;
 						}
 						.cupon_text{
-							margin-left: -446px; 
+							margin-left: -446px;
 							input{
 								width: 200px;
 								padding: 0px 15px;
@@ -1140,7 +1140,7 @@
 /* End Cart Area css
 ============================================================================================ */
 .checkout_area{
-	
+
 }
 .check_title{
 	h2{
@@ -1625,7 +1625,7 @@
 	box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.07);
 	height: 100%;
 	text-align: center;
-	padding-top: 115px;
+	padding-top: 70px;
 	h3{
 		color: $title-color;
 		text-transform: uppercase;
@@ -1636,7 +1636,7 @@
 		max-width: 385px;
 		margin: auto;
 		.form-group{
-			
+
 		}
 	}
 	&.reg_form{
@@ -1656,7 +1656,7 @@
 			outline: none;
 			box-shadow: none;
 			@include placeholder{
-				
+
 			}
 		}
 		.creat_account{
@@ -1791,7 +1791,7 @@
     border-radius: 100%;
     height: 4px;
     width: 4px;
-    top: 4px; 
+    top: 4px;
     left: 4px;
     margin: auto;
     transition: background 0.25s linear;

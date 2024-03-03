@@ -2,7 +2,6 @@
 
 namespace Database\Seeders;
 
-use App\Models\Category;
 use App\Models\Product;
 use Illuminate\Database\Seeder;
 
@@ -28,7 +27,10 @@ class ProductSeeder extends Seeder
                 'size' => $item->size,
                 'category_id' => $item->category_id,
                 'brand_id' => $item->brand_id,
-                'image' => $item->image
+                'image' => $item->image,
+                'width' => $item->width,
+                'height' => $item->height,
+                'weight' => $item->weight,
             ]);
         }
     }

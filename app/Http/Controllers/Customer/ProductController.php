@@ -19,8 +19,9 @@ class ProductController extends BaseController
        $categories = Category::all();
        return view('customer.product.list',['categories'=>$categories,'products'=>$products]);
    }
-   public function indexDetail(): View|Application|Factory|\Illuminate\Contracts\Foundation\Application
+   public function indexDetail($id): View|Application|Factory|\Illuminate\Contracts\Foundation\Application
    {
-       return view('customer.product.detail');
+       $product = Product::find($id);
+       return view('customer.product.detail',['product'=>$product]);
    }
 }

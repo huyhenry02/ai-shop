@@ -15,6 +15,11 @@
         </div>
     </section>
     <!-- End Banner Area -->
+    @if (session('success'))
+        <div id="success-alert" class="alert alert-success">
+            {{ session('success') }}
+        </div>
+    @endif
     <div class="container">
         <div class="row">
             <div class="col-xl-3 col-lg-4 col-md-5">
@@ -56,38 +61,42 @@
                 <section class="lattest-product-area pb-40 category-list">
                     <div class="row">
                         @foreach($products as $product)
-                            <!-- single product -->
-                            <div class="col-lg-4 col-md-6">
-                                <div class="single-product">
-                                    <img class="img-fluid" src="{{$product->image ?? ''}}" alt="">
-                                    <div class="product-details">
-                                        <h6>{{$product->name ?? ''}}</h6>
-                                        <div class="price">
-                                            <h6>{{$product->sale ?? ''}}</h6>
-                                            <h6 class="l-through">{{$product->price ?? ''}}0</h6>
-                                        </div>
-                                        <div class="prd-bottom">
 
-                                            <a href="" class="social-info">
-                                                <span class="ti-bag"></span>
-                                                <p class="hover-text">add to bag</p>
-                                            </a>
-                                            <a href="" class="social-info">
-                                                <span class="lnr lnr-heart"></span>
-                                                <p class="hover-text">Wishlist</p>
-                                            </a>
-                                            <a href="" class="social-info">
-                                                <span class="lnr lnr-sync"></span>
-                                                <p class="hover-text">compare</p>
-                                            </a>
-                                            <a href="" class="social-info">
-                                                <span class="lnr lnr-move"></span>
-                                                <p class="hover-text">view more</p>
-                                            </a>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="single-product">
+                                        <img class="img-fluid"
+                                             src="{{$product->image ?? 'http://127.0.0.1:8000/customer/img/product/p2.jpg'}}"
+                                             alt="">
+                                        <div class="product-details">
+                                            <h6>{{$product->name ?? ''}}</h6>
+                                            <div class="price">
+                                                <h6>{{$product->sale ?? ''}}</h6>
+                                                <h6 class="l-through">{{$product->price ?? ''}}0</h6>
+                                            </div>
+                                            <div class="prd-bottom">
+
+                                                <a href="{{route('customer.cart.add',['product_id' => $product->id, 'quantity' => 1])}}" class="social-info">
+                                                    <span class="ti-bag"></span>
+                                                    <p class="hover-text">add to bag</p>
+                                                </a>
+                                                <a href="" class="social-info">
+                                                    <span class="lnr lnr-heart"></span>
+                                                    <p class="hover-text">Wishlist</p>
+                                                </a>
+                                                <a href="" class="social-info">
+                                                    <span class="lnr lnr-sync"></span>
+                                                    <p class="hover-text">compare</p>
+                                                </a>
+                                                <a href="{{route('customer.product.detail',$product->id)}}"
+                                                   class="social-info">
+                                                    <span class="lnr lnr-move"></span>
+                                                    <p class="hover-text">view more</p>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+
                         @endforeach
 
                     </div>
@@ -252,5 +261,12 @@
             </div>
         </div>
     </section>
+    <script>
+        window.setTimeout(function() {
+            $("#success-alert").fadeTo(500, 0).slideUp(500, function(){
+                $(this).remove();
+            });
+        }, 2000);
+    </script>
     <!-- End related-product Area -->
 @endsection()

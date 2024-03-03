@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\BrandController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Customer\AuthController;
+use App\Http\Controllers\Customer\CartController;
 use App\Http\Controllers\Customer\CustomerController;
 use App\Http\Controllers\Customer\OrderController;
 use App\Http\Controllers\Customer\ProductController;
@@ -21,17 +22,33 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return redirect()->route('customer.index');
 });
+Route::get('/customer/login', [AuthController::class, 'indexLogin'])->name('customer.login');
+Route::get('/customer/register', [AuthController::class, 'indexRegister'])->name('customer.register');
+Route::post('/customer/register/post', [AuthController::class, 'postRegister'])->name('customer.register.post');
+Route::post('/customer/login/post', [AuthController::class, 'postLogin'])->name('customer.login.post');
+Route::get('/customer/logout', [AuthController::class, 'logout'])->name('customer.logout.post');
 Route::group([
     'prefix' => 'customer'
 ], function () {
     Route::get('/index', [CustomerController::class, 'index'])->name('customer.index');
     Route::get('/contact', [CustomerController::class, 'indexContact'])->name('customer.contact');
-    Route::get('/login', [AuthController::class, 'indexLogin'])->name('customer.login');
     Route::get('/product', [ProductController::class, 'indexList'])->name('customer.product');
-    Route::get('/product/detail', [ProductController::class, 'indexDetail'])->name('customer.product.detail');
-    Route::get('/order/cart', [OrderController::class, 'indexCart'])->name('customer.order.cart');
-    Route::get('/order/checkout', [OrderController::class, 'indexCheckout'])->name('customer.order.checkout');
-    Route::get('/order/confirmation', [OrderController::class, 'indexConfirmation'])->name('customer.order.confirmation');
+    Route::get('/product/detail/{id?}', [ProductController::class, 'indexDetail'])->name('customer.product.detail');
+    Route::group([
+        'prefix' => 'cart'
+    ], function () {
+        Route::get('/index', [CartController::class, 'indexCart'])->name('customer.cart.index');
+        Route::get('/add/{product_id?}/{quantity?}', [CartController::class, 'addToCart'])->name('customer.cart.add');
+        Route::get('/remove/{id?}', [CartController::class, 'removeFromCart'])->name('customer.cart.remove');
+    });
+    Route::group([
+        'prefix' => 'order'
+    ], function () {
+        Route::get('/checkout/{order_id?}', [OrderController::class, 'indexCheckout'])->name('customer.order.checkout');
+        Route::get('/confirmation', [OrderController::class, 'indexConfirmation'])->name('customer.order.confirmation');
+        Route::post('/create', [OrderController::class, 'createOrder'])->name('customer.order.create');
+        Route::post('/update', [OrderController::class, 'updateOrder'])->name('customer.order.update');
+    });
 });
 
 
@@ -77,6 +94,14 @@ Route::group([
         Route::post('/post', [BrandController::class, 'create'])->name('admin.brand.post');
         Route::post('/edit', [BrandController::class, 'edit'])->name('admin.brand.edit');
         Route::get('/delete/{id?}', [BrandController::class, 'delete'])->name('admin.brand.delete');
+    });
+    Route::group([
+        'prefix' => 'order'
+    ], function () {
+        Route::get('/', [\App\Http\Controllers\Admin\OrderController::class, 'indexOrder'])->name('admin.order');
+        Route::get('/detail/{order_id?}', [\App\Http\Controllers\Admin\OrderController::class, 'indexDetail'])->name('admin.order.detail');
+        Route::get('/edit/{order_id?}', [\App\Http\Controllers\Admin\OrderController::class, 'indexEdit'])->name('admin.order.edit.show');
+        Route::post('/update', [\App\Http\Controllers\Admin\OrderController::class, 'updateOrder'])->name('admin.order.edit');
     });
 
 

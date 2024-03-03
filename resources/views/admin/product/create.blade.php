@@ -1,13 +1,14 @@
 @extends('admin.layouts.main')
 @section('content')
+    <form action="{{route('admin.product.post')}}" method="post" enctype="multipart/form-data" class="form-horizontal">
     <div class="col-lg-12">
         <div class="card">
             <div class="card-header">
-                <strong>Create Product</strong>
+                <strong>Base Information</strong>
             </div>
             <div class="card-body card-block">
-                <form action="{{route('admin.product.post')}}" method="post" enctype="multipart/form-data" class="form-horizontal">
-                    @csrf
+
+            @csrf
                     <div class="row form-group">
                         <div class="col col-md-3"><label for="text-input" class=" form-control-label">Name</label></div>
                         <div class="col-12 col-md-9"><input type="text" id="text-input" name="name" placeholder="Name" class="form-control"></div>
@@ -62,13 +63,40 @@
                         <div class="col col-md-3"><label for="file-input" class=" form-control-label">File Product</label></div>
                         <div class="col-12 col-md-9"><input type="file" id="file-input" name="image" class="form-control-file"></div>
                     </div>
-                    <div class="card-body" style="text-align: right">
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                        <button type="button" class="btn btn-primary">Exit</button>
-                    </div>
-                </form>
             </div>
 
         </div>
     </div>
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-header">
+                    <strong>Specification</strong>
+                </div>
+                <div class="card-body card-block">
+                    <div class="row form-group">
+                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">Width</label></div>
+                        <div class="col-12 col-md-9"><input type="text" id="text-input" name="width" placeholder="Width"
+                                                            class="form-control"></div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">Height</label></div>
+                        <div class="col-12 col-md-9"><input type="text" id="text-input" name="height" placeholder="Height"
+                                                            class="form-control"></div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">Weight</label></div>
+                        <div class="col-12 col-md-9"><input type="text" id="text-input" name="weight" placeholder="Weight"
+                                                            class="form-control"></div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+        <div class="card-body" style="text-align: right">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="button" class="btn btn-primary">Exit</button>
+        </div>
+    </form>
 @endsection()

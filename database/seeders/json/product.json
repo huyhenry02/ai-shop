@@ -9,7 +9,13 @@
         "size": "8",
         "category_id": 1,
         "brand_id": 1,
-        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg",
+        "width": "10 cm",
+        "height": "20 cm",
+        "weight": "6kg",
+        "width": "10 cm",
+        "height": "20 cm",
+        "weight": "6kg"
     },
     {
         "name": "Basketball Sneakers 1",
@@ -21,7 +27,13 @@
         "size": "10",
         "category_id": 2,
         "brand_id": 2,
-        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg",
+        "width": "10 cm",
+        "height": "20 cm",
+        "weight": "6kg",
+        "width": "10 cm",
+        "height": "20 cm",
+        "weight": "6kg"
     },
     {
         "name": "Casual Sneakers 1",
@@ -33,7 +45,13 @@
         "size": "9",
         "category_id": 3,
         "brand_id": 3,
-        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg",
+        "width": "10 cm",
+        "height": "20 cm",
+        "weight": "6kg",
+        "width": "10 cm",
+        "height": "20 cm",
+        "weight": "6kg"
     },
     {
         "name": "CrossFit Training Shoes 1",
@@ -45,7 +63,10 @@
         "size": "7",
         "category_id": 4,
         "brand_id": 4,
-        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg",
+        "width": "10 cm",
+        "height": "20 cm",
+        "weight": "6kg"
     },
     {
         "name": "Trail Running Shoes 1",
@@ -57,7 +78,10 @@
         "size": "8",
         "category_id": 5,
         "brand_id": 1,
-        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg",
+        "width": "10 cm",
+        "height": "20 cm",
+        "weight": "6kg"
     },
     {
         "name": "Soccer Cleats 1",
@@ -69,7 +93,10 @@
         "size": "9",
         "category_id": 6,
         "brand_id": 2,
-        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg",
+        "width": "10 cm",
+        "height": "20 cm",
+        "weight": "6kg"
     },
     {
         "name": "Slip-On Sneakers 1",
@@ -81,7 +108,10 @@
         "size": "7",
         "category_id": 7,
         "brand_id": 3,
-        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg",
+        "width": "10 cm",
+        "height": "20 cm",
+        "weight": "6kg"
     },
     {
         "name": "Weightlifting Shoes 1",
@@ -93,7 +123,10 @@
         "size": "10",
         "category_id": 8,
         "brand_id": 4,
-        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg",
+        "width": "10 cm",
+        "height": "20 cm",
+        "weight": "6kg"
     },
     {
         "name": "Running Sandals 1",
@@ -105,7 +138,10 @@
         "size": "9",
         "category_id": 9,
         "brand_id": 1,
-        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg",
+        "width": "10 cm",
+        "height": "20 cm",
+        "weight": "6kg"
     },
     {
         "name": "Skate Shoes 1",
@@ -117,7 +153,10 @@
         "size": "8",
         "category_id": 10,
         "brand_id": 2,
-        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg",
+        "width": "10 cm",
+        "height": "20 cm",
+        "weight": "6kg"
     },
     {
         "name": "Running Shoes 2",
@@ -129,7 +168,10 @@
         "size": "8",
         "category_id": 1,
         "brand_id": 1,
-        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg",
+        "width": "10 cm",
+        "height": "20 cm",
+        "weight": "6kg"
     },
     {
         "name": "Basketball Sneakers 2",
@@ -141,7 +183,10 @@
         "size": "10",
         "category_id": 2,
         "brand_id": 2,
-        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg",
+        "width": "10 cm",
+        "height": "20 cm",
+        "weight": "6kg"
     },
     {
         "name": "Casual Sneakers 2",
@@ -153,7 +198,10 @@
         "size": "9",
         "category_id": 3,
         "brand_id": 3,
-        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg",
+        "width": "10 cm",
+        "height": "20 cm",
+        "weight": "6kg"
     },
     {
         "name": "CrossFit Training Shoes 2",
@@ -165,7 +213,10 @@
         "size": "7",
         "category_id": 4,
         "brand_id": 4,
-        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg",
+        "width": "10 cm",
+        "height": "20 cm",
+        "weight": "6kg"
     },
     {
         "name": "Trail Running Shoes 2",
@@ -177,7 +228,10 @@
         "size": "8",
         "category_id": 5,
         "brand_id": 1,
-        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg",
+        "width": "10 cm",
+        "height": "20 cm",
+        "weight": "6kg"
     },
     {
         "name": "Soccer Cleats 2",
@@ -189,7 +243,10 @@
         "size": "9",
         "category_id": 6,
         "brand_id": 2,
-        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg",
+        "width": "10 cm",
+        "height": "20 cm",
+        "weight": "6kg"
     },
     {
         "name": "Slip-On Sneakers 2",
@@ -201,7 +258,10 @@
         "size": "7",
         "category_id": 7,
         "brand_id": 3,
-        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg",
+        "width": "10 cm",
+        "height": "20 cm",
+        "weight": "6kg"
     },
     {
         "name": "Weightlifting Shoes 2",
@@ -213,7 +273,10 @@
         "size": "10",
         "category_id": 8,
         "brand_id": 4,
-        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg",
+        "width": "10 cm",
+        "height": "20 cm",
+        "weight": "6kg"
     },
     {
         "name": "Running Sandals 2",
@@ -225,7 +288,10 @@
         "size": "9",
         "category_id": 9,
         "brand_id": 1,
-        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg",
+        "width": "10 cm",
+        "height": "20 cm",
+        "weight": "6kg"
     },
     {
         "name": "Skate Shoes 2",
@@ -237,7 +303,10 @@
         "size": "8",
         "category_id": 10,
         "brand_id": 2,
-        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg",
+        "width": "10 cm",
+        "height": "20 cm",
+        "weight": "6kg"
     },
     {
         "name": "Running Shoes 3",
@@ -249,7 +318,10 @@
         "size": "8",
         "category_id": 1,
         "brand_id": 1,
-        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg",
+        "width": "10 cm",
+        "height": "20 cm",
+        "weight": "6kg"
     },
     {
         "name": "Basketball Sneakers 3",
@@ -261,7 +333,10 @@
         "size": "10",
         "category_id": 2,
         "brand_id": 2,
-        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg",
+        "width": "10 cm",
+        "height": "20 cm",
+        "weight": "6kg"
     },
     {
         "name": "Casual Sneakers 3",
@@ -273,7 +348,10 @@
         "size": "9",
         "category_id": 3,
         "brand_id": 3,
-        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg",
+        "width": "10 cm",
+        "height": "20 cm",
+        "weight": "6kg"
     },
     {
         "name": "CrossFit Training Shoes 3",
@@ -285,7 +363,10 @@
         "size": "7",
         "category_id": 4,
         "brand_id": 4,
-        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg",
+        "width": "10 cm",
+        "height": "20 cm",
+        "weight": "6kg"
     },
     {
         "name": "Trail Running Shoes 3",
@@ -297,7 +378,10 @@
         "size": "8",
         "category_id": 5,
         "brand_id": 1,
-        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg",
+        "width": "10 cm",
+        "height": "20 cm",
+        "weight": "6kg"
     },
     {
         "name": "Soccer Cleats 3",
@@ -309,7 +393,10 @@
         "size": "9",
         "category_id": 6,
         "brand_id": 2,
-        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg",
+        "width": "10 cm",
+        "height": "20 cm",
+        "weight": "6kg"
     },
     {
         "name": "Slip-On Sneakers 3",
@@ -321,7 +408,10 @@
         "size": "7",
         "category_id": 7,
         "brand_id": 3,
-        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg",
+        "width": "10 cm",
+        "height": "20 cm",
+        "weight": "6kg"
     },
     {
         "name": "Weightlifting Shoes 3",
@@ -333,7 +423,10 @@
         "size": "10",
         "category_id": 8,
         "brand_id": 4,
-        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg",
+        "width": "10 cm",
+        "height": "20 cm",
+        "weight": "6kg"
     },
     {
         "name": "Running Sandals 3",
@@ -345,7 +438,10 @@
         "size": "9",
         "category_id": 9,
         "brand_id": 1,
-        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg",
+        "width": "10 cm",
+        "height": "20 cm",
+        "weight": "6kg"
     },
     {
         "name": "Skate Shoes 3",
@@ -357,6 +453,9 @@
         "size": "8",
         "category_id": 10,
         "brand_id": 2,
-        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg"
+        "image": "http://127.0.0.1:8000/customer/img/product/p1.jpg",
+        "width": "10 cm",
+        "height": "20 cm",
+        "weight": "6kg"
     }
 ]

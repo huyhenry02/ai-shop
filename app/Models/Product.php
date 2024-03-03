@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Product extends Model
 {
@@ -25,7 +26,10 @@ class Product extends Model
         'size',
         'category_id',
         'brand_id',
-        'image'
+        'image',
+        'width',
+        'height',
+        'weight'
     ];
     /**
      * The attributes that should be hidden for serialization.
@@ -43,5 +47,9 @@ class Product extends Model
     public function brand(): BelongsTo
     {
         return $this->belongsTo(Brand::class, 'brand_id');
+    }
+    public function carts(): HasMany
+    {
+        return $this->hasMany(Cart::class, 'product_id');
     }
 }

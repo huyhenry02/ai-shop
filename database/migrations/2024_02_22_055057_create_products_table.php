@@ -19,6 +19,9 @@ return new class extends Migration
             $table->decimal('sale', 8, 2);
             $table->string('color');
             $table->string('size');
+            $table->string('width');
+            $table->string('height');
+            $table->string('weight');
             $table->string('image')->nullable();
             $table->integer('quantity');
             $table->unsignedBigInteger('category_id');
