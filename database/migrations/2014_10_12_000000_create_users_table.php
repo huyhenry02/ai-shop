@@ -14,7 +14,7 @@ return new class extends Migration {
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
-            $table->enum('role_type', ['customer', 'admin']);
+            $table->enum('role_type', ['customer', 'employee']);
             $table->string('address');
             $table->string('phone');
             $table->integer('age');

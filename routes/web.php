@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\BrandController;
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Customer\AuthController;
 use App\Http\Controllers\Customer\CartController;
 use App\Http\Controllers\Customer\CustomerController;
@@ -52,12 +53,11 @@ Route::group([
 });
 
 
-Route::get('admin/register', [\App\Http\Controllers\Admin\AuthController::class, 'indexRegister'])->name('admin.register');
 Route::group([
     'prefix' => 'admin'
 ], function () {
 
-    Route::get('/login', [\App\Http\Controllers\Admin\AuthController::class, 'indexLogin'])->name('admin.login');
+    Route::get('/index', [\App\Http\Controllers\Admin\AuthController::class, 'index'])->name('admin.index');
 
     Route::group([
         'prefix' => 'product'
@@ -70,6 +70,14 @@ Route::group([
         Route::post('/edit', [\App\Http\Controllers\Admin\ProductController::class, 'edit'])->name('admin.product.edit');
         Route::get('/delete/{id?}', [\App\Http\Controllers\Admin\ProductController::class, 'delete'])->name('admin.product.delete');
 
+    });
+    Route::group([
+        'prefix' => 'user'
+    ], function () {
+        Route::get('/', [UserController::class, 'indexList'])->name('admin.user');
+        Route::get('/employee', [UserController::class, 'indexEmployee'])->name('admin.user.indexEmployee');
+        Route::get('/customer', [UserController::class, 'indexCustomer'])->name('admin.user.indexCustomer');
+        Route::get('/detail', [UserController::class, 'indexDetail'])->name('admin.user.detail');
     });
 
     Route::group([

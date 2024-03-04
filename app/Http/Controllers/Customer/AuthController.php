@@ -37,6 +37,12 @@ class AuthController extends BaseController
         $credentials = $request->only('email', 'password');
         if (auth()->attempt($credentials)) {
             $request->session()->regenerate();
+            $user = auth()->user();
+            if ($user->role_type == 'employee') {
+                return redirect()->route('admin.index');
+            } else if ($user->role_type == 'customer') {
+                return redirect()->route('customer.index');
+            }
             return redirect()->route('customer.index');
         }
         return back()->withErrors([

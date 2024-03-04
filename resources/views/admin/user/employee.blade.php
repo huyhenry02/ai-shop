@@ -7,7 +7,6 @@
                     <div class="page-header float-left">
                         <div class="page-title">
                             <div class="card-body">
-                                <a href="" type="button" class="btn btn-primary">Create User</a>
                                 <a href="{{route('admin.user.indexCustomer')}}" type="button" class="btn btn-secondary">Data Customer</a>
                                 <a href="{{route('admin.user.indexEmployee')}}" type="button" class="btn btn-success">Data Employee</a>
                             </div>
@@ -20,7 +19,7 @@
                             <ol class="breadcrumb text-right">
                                 <li><a href="#">Dashboard</a></li>
                                 <li><a href="#">User</a></li>
-                                <li class="active">Data User</li>
+                                <li class="active">Data Employee</li>
                             </ol>
                         </div>
                     </div>
@@ -36,7 +35,7 @@
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header">
-                            <strong class="card-title">Data User</strong>
+                            <strong class="card-title">Data Employee</strong>
                         </div>
                         <div class="card-body">
                             <table id="bootstrap-data-table" class="table table-striped table-bordered">
@@ -47,7 +46,6 @@
                                     <th>Phone</th>
                                     <th>Email</th>
                                     <th>Address</th>
-                                    <th>Role Type</th>
                                     <th>Age</th>
                                     <th width="16%">Action</th>
                                 </tr>
@@ -57,20 +55,19 @@
                                     @php
                                         $i = 1
                                     @endphp
-                                    <tr>
-                                        <td>{{$i++}}</td>
-                                        <td>{{$user->name ?? ''}}</td>
-                                        <td>{{$user->phone ?? ''}}</td>
-                                        <td>{{$user->email ?? ''}}</td>
-                                        <td>{{$user->address ?? ''}}</td>
-                                        <td>{{$user->role_type ?? ''}}</td>
-                                        <td>{{$user->age ?? ''}}</td>
-                                        <td>
-                                            <a href="" type="button" class="btn btn-primary">Edit</a>
-                                            <a href="" type="button" class="btn btn-danger">Delete</a>
-                                            <a href="" type="button" class="btn btn-success">More</a>
-                                        </td>
-                                    </tr>
+                                <tr>
+                                    <td>{{$i++}}</td>
+                                    <td>{{$user->name ?? ''}}</td>
+                                    <td>{{$user->phone ?? ''}}</td>
+                                    <td>{{$user->email ?? ''}}</td>
+                                    <td>{{$user->address ?? ''}}</td>
+                                    <td>{{$user->age ?? ''}}</td>
+                                    <td>
+                                        <a href="" type="button" class="btn btn-primary">Edit</a>
+                                        <a href="" type="button" class="btn btn-danger">Delete</a>
+                                        <a href="" type="button" class="btn btn-success">More</a>
+                                    </td>
+                                </tr>
                                 @endforeach
                                 </tbody>
                             </table>

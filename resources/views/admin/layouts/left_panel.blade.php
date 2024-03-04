@@ -41,7 +41,7 @@
                        aria-expanded="false"> <i class="menu-icon fa fa-cogs"></i>User</a>
                     <ul class="sub-menu children dropdown-menu">
                         <li><i class="fa fa-id-badge"></i><a href="">Create</a></li>
-                        <li><i class="fa fa-bars"></i><a href="">List</a></li>
+                        <li><i class="fa fa-bars"></i><a href="{{route('admin.user')}}">List</a></li>
                     </ul>
                 </li>
             </ul>
